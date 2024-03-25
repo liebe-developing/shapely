@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.py-96 {
+  padding: 96px 0;
+}
+
+@layer components {
+  .social_icons {
+    @apply text-white transition duration-300 ease-in-out hover:text-[#745cf9] text-[20px] cursor-pointer;
+  }
+  .dropdown {
+    @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white w-full flex flex-col gap-2 justify-end items-end;
+  }
+
+  .dropdown_link {
+    @apply text-sm text-gray-700 hover:text-gray-500 font-medium;
+  }
+}
